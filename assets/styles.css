@@ -1,0 +1,9 @@
+nav {
+    background-color: gray;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px 15px;
+    max-width: 65%;
+}
