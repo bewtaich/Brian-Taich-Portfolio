@@ -1,57 +1,138 @@
-* {
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #445877;
+    text-align: center;
+}
+h1, h2, h3, a , p {
     font-family: 'Trebuchet MS', Verdana, sans-serif;
 
 }
+
 
 h1 {
     display: block;
     font-size: 80px;
     padding: 20px 20px;
-    background-color: rgb(35, 119, 255);   
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-family: 'Trebuchet MS', Verdana, sans-serif;
+    background-color: #92ccce;
+    color: #31343d;
 }
 
 nav {
     display: flex;
     padding: 15px 15px;
-    background-color: rgb(0, 0, 0);
+    background-color: #31343d;
     font-size: 25px;
-    color: rgb(35, 119, 255);
-    flex-direction: space-around;
-    justify-content: flex-start;
+    color: #92ccce;
+    justify-content: center;
+    text-decoration: underline;
+    
+    ul {
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    li {
+        margin: 10px 20px;
+        text-decoration: none;
+        color:white;
+    }
     
 }
 
-ul {
-    display: flex;
-    justify-content: space-between;
-    
-}
-
-a {
-    margin: 10px 10px;
-    text-decoration: none;
-    color:white;
-}
-header img {
-    margin: 0;
+p {
     display: block;
-}
- h2 {
-    font-size: 65px;
-    margin:15px 15px;
- }
-div {
-    display: grid;
-    grid-template-columns: 30% 35% 35%;
-    grid-template-rows:auto;
-}
-section h3, section img {
-    display: inline;
+    margin: 0 80px;
+    text-align: left;
 }
 
-a:visited{
-    color:white;
+ h2 {
+    display: block;
+    font-size: 60px;
+    margin:20px 20px;
+    text-decoration: underline;
+    text-align: center;
+}
+/*Ignore above*/
+.project1 {
+    justify-content: space-between;
+}
+
+.others {
+    display: flex;
+    justify-content: space-around;
+}
+#Work {
+    font-size: 50px;
+}
+
+#brian  {
+    max-height: 400px;
+    display:inline-block;
+    float: left;
+    border: 6px solid #92ccce; 
+    margin: 20px 30px;
+}
+
+div{
+    margin: 15px 15px;
+}
+
+
+header ul li a {
+    color:#92ccce;
+}
+
+header ul li a:visited{
+    color:#92ccce;
+}
+
+header ul li a:hover{
+    color: whitesmoke;
+}
+
+footer{
+    border-top: 3px solid #445877;
+    margin: auto 25px;
+}
+
+h3 {
+    padding: 15px 8px;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+footer ul li {
+    margin: 10px 30px;
+}
+
+footer ul li a:link {
+    color: #445877;
+}
+
+footer ul li a:visited {
+    color: #445877;r
+}
+
+
+
+@media screen and (max-width: 992px) {
+    
+    .project1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .others {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+    }
 }
