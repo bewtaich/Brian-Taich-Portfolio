@@ -55,31 +55,42 @@ p {
     text-decoration: underline;
     text-align: center;
 }
-/*Ignore above*/
-.project1 {
-    justify-content: space-between;
-}
 
-.others {
-    display: flex;
-    justify-content: space-around;
+.label p{
+    z-index: 2;
+    background-color: #92ccce;
+    color: white;
+    position:absolute;
+    padding:8px 8px;
+    border-radius: .9em;
 }
 #Work {
     font-size: 50px;
 }
 
-#brian  {
-    max-height: 400px;
-    display:inline-block;
-    float: left;
-    border: 6px solid #92ccce; 
-    margin: 20px 30px;
-}
-
 div{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     margin: 15px 15px;
 }
 
+.others{
+    display: grid;
+    margin:0 20px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+
+img {
+    z-index: 1;
+    border: 6px solid #92ccce;
+    border-right: none;
+    border-top:none;
+}
+.others img{
+    margin-right:20px;
+}
 
 header ul li a {
     color:#92ccce;
@@ -117,22 +128,29 @@ footer ul li a:link {
 }
 
 footer ul li a:visited {
-    color: #445877;r
+    color: #445877;
 }
 
 
 
 @media screen and (max-width: 992px) {
     
-    .project1 {
+    div {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    .others {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 50% 50%;
-    }
+.project1 img {
+    max-width: 100%;
+    max-height: 30%;
+}
+
+.others{
+    max-width: 100%;
+}
+.others img {
+    margin-top: 15px;
+    max-width: 100%;
+}
 }
