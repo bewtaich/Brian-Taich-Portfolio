@@ -1,7 +1,5 @@
 # Brian-Taich-Portfolio
 
-# Prework Study Guide Webpage
-
 ## Description
 This website contains my portfolio of web apps. It acts an organized hub for employers to view my work and holds any personal information they would need. 
 The website itself is also a showcase of my skills.
